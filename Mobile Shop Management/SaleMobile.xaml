@@ -1,0 +1,32 @@
+﻿<Window x:Class="MobileShopManagement.SaleMobile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MobileShopManagement"
+        mc:Ignorable="d"
+        Loaded="Eve"
+        Title="SaleMobile" Height="450" Width="1000">
+    <Grid Margin="0,0,2,0">
+        <Label Content="Enter Mobile ID" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Margin="85,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Quantity" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Margin="85,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Price" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Margin="85,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Customer ID" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Margin="85,206,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtMID" FontSize="20" HorizontalAlignment="Left" Height="37" Margin="339,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248"/>
+        <TextBox Name="txtquant" FontSize="20" HorizontalAlignment="Left" Height="37" Margin="339,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248"/>
+        <TextBox Name="txtprice" FontSize="20" HorizontalAlignment="Left" Height="37" Margin="339,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248"/>
+        <TextBox Name="txtCID" FontSize="20" HorizontalAlignment="Left" Height="37" Margin="339,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248"/>
+        <Button Click="btnsale" Content="Sale" HorizontalAlignment="Left" Margin="267,301,0,0" VerticalAlignment="Top" Width="153" Height="48"/>
+        <DataGrid Name="gridMobile" HorizontalAlignment="Left" Height="154" Margin="701,43,0,0" VerticalAlignment="Top" Width="254" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.215"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.198"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+        <DataGrid Name="gridcustomer" HorizontalAlignment="Left" Height="164" Margin="695,231,0,0" VerticalAlignment="Top" Width="260"/>
+    </Grid>
+</Window>

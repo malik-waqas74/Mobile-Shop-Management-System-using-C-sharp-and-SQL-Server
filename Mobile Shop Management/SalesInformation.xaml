@@ -1,0 +1,15 @@
+﻿<Window x:Class="MobileShopManagement.SalesInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MobileShopManagement"
+        mc:Ignorable="d"
+        Loaded="SalesEn"
+        Title="SalesInformation" Height="450" Width="800" Background="Black">
+    <Grid>
+        <DataGrid x:Name="Dgrid" HorizontalAlignment="Left" Height="330" VerticalAlignment="Top" Width="770" RenderTransformOrigin="1.85,0.767" Margin="10,72,-70,0"/>
+        <Label Content="Sales Inforamtion" FontWeight="Bold" FontSize="26" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Foreground="#FFFDF8F8"/>
+        
+    </Grid>
+</Window>
